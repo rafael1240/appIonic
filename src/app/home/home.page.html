@@ -7,14 +7,47 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-grid style="max-width: 1200px; width:95%; margin: auto;">
+    <ion-row style="background-color: black">
+  
+      <ion-col (click)="detalhes (0)" size="12">
+        <a [routerLink]="['/detalhes/0']">
+          <ion-img src="https://media.filmelier.com/tit/R0gqnQ/poster/alem-do-horizonte_65GKShg.jpeg">Além do Horizonte
+          </ion-img>
+        </a>
+      </ion-col>
+    </ion-row>
+  
+    <ion-row style="background-color: black">
+      <ion-col (click)="detalhes (1)" size="12" size-md="6">
+        <a [routerLink]="['/detalhes/1']">
+          <ion-img src="https://media.filmelier.com/images/filmes/cartaz/dawn-of-the-dead16498.jpeg">Madrugada dos Mortos
+          </ion-img>
+        </a>
+      </ion-col>
+  
+      <ion-col (click)="detalhes (2)" size="12" size-md="6">
+        <a [routerLink]="['/detalhes/2']">
+          <ion-img src="https://media.filmelier.com/tit/9zRKCR/poster/ataque-dos-caes_EAWReTY.jpeg">Ataque dos Santos
+          </ion-img>
+        </a>
+      </ion-col>
+  
+      <ion-col (click)="detalhes (3)" size="12" size-md="6">
+        <a [routerLink]="['/detalhes/3']">
+          <ion-img src="https://media.filmelier.com/tit/15921/poster/no-ritmo-do-coracao_lT99Htk.jpeg">Coda</ion-img>
+        </a>
+      </ion-col>
+  
+      <ion-col (click)="detalhes (4)" size="12" size-md="6">
+        <a [routerLink]="['/detalhes/3']">
+          <ion-img src="https://www.californiafilmes.com.br/wp-content/uploads/2021/11/PosterMateouMorraVOD.jpg">Mate ou
+            Morra</ion-img>
+        </a>
+      </ion-col>
+  
+  
+    </ion-row>
+  
+  </ion-grid>
 </ion-content>
